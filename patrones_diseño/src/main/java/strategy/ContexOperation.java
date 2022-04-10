@@ -9,7 +9,7 @@ public class ContexOperation {
         this.operationStrategy=operationStrategy;
     }
 
-    public List<int> executeStrategy(List<int> a, List<int> b){
+    public List<Integer> executeStrategy(List<Integer> a, List<Integer> b){
         return operationStrategy.execute(a,b);
     }
 
