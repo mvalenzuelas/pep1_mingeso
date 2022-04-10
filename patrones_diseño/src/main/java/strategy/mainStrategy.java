@@ -19,5 +19,9 @@ public class mainStrategy {
         c=contexOperation.executeStrategy(a,b);
         System.out.println("Intersección de las listas\n"+a.toString()+"\n"+b.toString()+"\n----------------\nRESULTADO\n"+c.toString()+"\n----------------\n");
 
+        contexOperation.setStrategy(new ConcreteLess());
+        c=contexOperation.executeStrategy(a,b);
+        System.out.println("Resta de las listas\n"+a.toString()+"\n"+b.toString()+"\n----------------\nRESULTADO\n"+c.toString()+"\n----------------\n");
+
     }
 }
