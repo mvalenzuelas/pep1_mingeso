@@ -1,5 +1,6 @@
 package command;
 
-public interface Command {
-    
+public interface OperacionesHospitalarias {
+    public void ejecutarOperacion(Hospital hospital);
+
 }

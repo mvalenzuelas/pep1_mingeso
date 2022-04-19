@@ -1,18 +1,18 @@
 package command;
 
-public class SolicitarInterconsulta implements OperacionesHospitalarias{
+public class comandoInterconsulta implements OperacionesHospitalarias{
     private final Doctor doctor;
     private final Paciente paciente;
     private final String especialidad;
 
-    public SolicitarInterconsulta(Doctor doctor, Paciente paciente,String especialidad) {
+    public comandoInterconsulta(Doctor doctor, Paciente paciente,String especialidad) {
         this.doctor = doctor;
         this.paciente = paciente;
         this.especialidad=especialidad;
     }
 
     @Override
-    public void ejecutarOperacion() {
+    public void ejecutarOperacion(Hospital hospital) {
         hospital.tramitarInterconsulta(doctor,paciente,especialidad);
 
     }
