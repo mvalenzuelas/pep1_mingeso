@@ -13,7 +13,7 @@ public class mainStrategy {
         List<Integer> c=new ArrayList<>();
 
         c=contexOperation.executeStrategy(a,b);
-        System.out.println("Union de las listas\n"+a.toString()+"\n"+b.toString()+"\n----------------\nRESULTADO\n"+c.toString()+"\n----------------\n");
+        System.out.println("JOIN de las listas\n"+a.toString()+"\n"+b.toString()+"\n----------------\nRESULTADO\n"+c.toString()+"\n----------------\n");
 
         contexOperation.setStrategy(new ConcreteInter());
         c=contexOperation.executeStrategy(a,b);
